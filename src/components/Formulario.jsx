@@ -8,7 +8,7 @@ const Formulario = () => {
   const email_entry = import.meta.env.VITE_EMAIL_ENTRY;
   const plan_entry = import.meta.env.VITE_PLAN_ENTRY;
   return (
-    <div className="flex py-5 md:w-[50%] flex-col md:p-4 gap-4">
+    <div className="flex p-2 md:w-[50%] flex-col md:p-4 gap-4 h-[70%] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 ">
       <Toaster />
       <p className="text-center text-2xl font-bold">
         FORMULARIO DE PREINSCRIPCIÓN
@@ -70,7 +70,7 @@ const Formulario = () => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit} className="">
+          <form onSubmit={handleSubmit} className="h-full flex flex-col justify-center">
             <div className="p-2 w-full">
               <div className="relative">
                 <input
@@ -111,7 +111,7 @@ const Formulario = () => {
                   <select
                     id="message"
                     name="message"
-                    className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-3 focus:ring-gray-400 text-lg outline-none text-gray-700 py-[0.50rem] px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-3 focus:ring-gray-400 text-lg outline-none text-gray-700 py-[0.39rem] px-3 leading-8 transition-colors duration-200 ease-in-out"
                     onChange={handleChange}
                     // onBlur={handleBlur}
                     value={values.plan}

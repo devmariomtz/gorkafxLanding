@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Form from "./components/Form";
+import Trayectoria from "./components/Trayectoria";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <NavBar />
         <Hero />
         <Form />
+        <Trayectoria />
       </div>
     </React.Fragment>
   );

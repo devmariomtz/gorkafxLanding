@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero": "url('/src/assets/bg.jpg')"
+        "hero": "url('/src/assets/bg.jpg')",
+        "trayectoria": "url('/src/assets/honda.png')"
       },
     },
   },
