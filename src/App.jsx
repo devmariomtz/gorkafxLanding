@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Form from "./components/Form";
 import Trayectoria from "./components/Trayectoria";
 import Services from "./components/Services";
+import Planes from "./components/Planes";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Form />
       <Trayectoria />
       <Services />
+      <Planes />
     </div>
   );
 }

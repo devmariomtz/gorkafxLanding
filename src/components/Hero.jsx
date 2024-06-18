@@ -4,7 +4,7 @@ import playButtonImage from "/src/assets/play.png"; // Asegúrate de usar la rut
 
 const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-    const [size, setSize] = useState([560, 315]);
+  const [size, setSize] = useState([560, 315]);
   const handlePlay = () => {
     setIsPlaying(true);
     var thumbnail = document.getElementById("thumbnail");
@@ -36,7 +36,11 @@ const Hero = () => {
             allowFullScreen
           ></iframe>
         ) : (
-          <div id="thumbnail" className="relative cursor-pointer" onClick={handlePlay}>
+          <div
+            id="thumbnail"
+            className="relative cursor-pointer"
+            onClick={handlePlay}
+          >
             <img src={thumbnailImage} alt="Thumbnail" className="" />
             <img
               src={playButtonImage}
@@ -47,8 +51,13 @@ const Hero = () => {
         )}
       </div>
       <div className="text-center space-y-4">
-        <p className="text-4xl font-semibold">Aprende a tradear y fondear tus cuentas</p>
-        <p className="text-3xl">Plazas <span className="font-bold">CERRADAS</span> temporalmente</p>
+        <p className="text-4xl font-semibold">
+          Aprende a tradear y fondear tus cuentas
+        </p>
+        <p className="text-3xl">
+          Plazas <span className="font-bold text-[#2d91d4]">CERRADAS</span>{" "}
+          temporalmente
+        </p>
         <button className="text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2">
           ¡QUIERO SABER MÁS!
         </button>
