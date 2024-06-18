@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import Trayectoria from "./components/Trayectoria";
 import Services from "./components/Services";
 import Planes from "./components/Planes";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Trayectoria />
       <Services />
       <Planes />
+      <Footer />
     </div>
   );
 }
