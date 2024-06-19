@@ -71,7 +71,10 @@ const Formulario = () => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit} className="h-full flex flex-col justify-center gap-4">
+          <form
+            onSubmit={handleSubmit}
+            className="h-full flex flex-col justify-center gap-4"
+          >
             <div className="p-2 w-full">
               <div className="relative">
                 <input
@@ -132,6 +135,10 @@ const Formulario = () => {
             </div>
             <div className="p-2 w-full flex justify-center">
               <button
+                id="send"
+                name="send"
+                aria-label="send"
+                title="send"
                 className="flex w-full md:w-auto text-white bg-[#2d91d4] border-0 py-2 px-8 focus:outline-none hover:bg-[#42a6e9] rounded text-lg gap-2 items-center justify-center"
                 type="submit"
                 disabled={isSubmitting}

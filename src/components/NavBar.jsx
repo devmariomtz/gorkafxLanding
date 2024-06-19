@@ -56,6 +56,10 @@ const NavBar = () => {
         </div>
         <div className="md:hidden">
           <button
+          id="menu"
+          name="menu"
+          aria-label="menu"
+          title="menu"
             onClick={toggleMenu}
             className="text-white focus:outline-none"
           >

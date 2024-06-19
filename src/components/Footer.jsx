@@ -95,15 +95,33 @@ const Footer = () => {
       <hr className="border-white border-[0.1em] w-full" />
       <div className="flex justify-center md:justify-end py-4 gap-4">
         <a
+          id="youtube"
+          name="youtube"
+          aria-label="youtube"
+          title="youtube"
           href="https://www.youtube.com/channel/UCZLA_cKZbs-M_WW-PQNXW6Q"
           target="_blank"
         >
           <img src="src/assets/yt.png" alt="" className="w-9" />
         </a>
-        <a href="https://www.instagram.com/gorkafx/" target="_blank">
+        <a
+          id="instagram"
+          name="instagram"
+          aria-label="instagram"
+          title="instagram"
+          href="https://www.instagram.com/gorkafx/"
+          target="_blank"
+        >
           <img src="src/assets/ig.png" alt="" className="w-9" />
         </a>
-        <a href="https://www.tiktok.com/@gorkafx" target="_blank">
+        <a
+          id="tiktok"
+          name="tiktok"
+          aria-label="tiktok"
+          title="tiktok"
+          href="https://www.tiktok.com/@gorkafx"
+          target="_blank"
+        >
           <img src="src/assets/tiktok.png" alt="" className="w-9" />
         </a>
       </div>

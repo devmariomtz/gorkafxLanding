@@ -42,6 +42,10 @@ const Planes = () => {
             </p>
           </div>
           <button
+            id="btnBasico"
+            name="btnBasico"
+            aria-label="btnBasico"
+            title="btnBasico"
             className="w-[85%] m-4 bg-[#2d91d4] border-none rounded-[15px] shadow-[0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480] text-white  font-montserrat text-[1.4em] font-semibold mt-5 outline-none overflow-hidden px-[40px] py-[15px] relative no-underline transition-all duration-[250ms] ease-in-out "
             disabled
           >
@@ -84,6 +88,10 @@ const Planes = () => {
             </p>
           </div>
           <button
+            id="btnAvanzado"
+            name="btnAvanzado"
+            aria-label="btnAvanzado"
+            title="btnAvanzado"
             className="w-[85%] m-4 bg-[#2d91d4] border-none rounded-[15px] shadow-[0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480] text-white  font-montserrat text-[1.4em] font-semibold mt-5 outline-none overflow-hidden px-[40px] py-[15px] relative no-underline transition-all duration-[250ms] ease-in-out "
             disabled
           >
@@ -126,6 +134,10 @@ const Planes = () => {
             </p>
           </div>
           <button
+            id="btnPremium"
+            name="btnPremium"
+            aria-label="btnPremium"
+            title="btnPremium"
             className="w-[85%] m-4 bg-[#2d91d4] border-none rounded-[15px] shadow-[0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480,0_0_10px_#2d91d480] text-white cursor-pointer font-montserrat text-[1.4em] font-semibold mt-5 outline-none overflow-hidden px-[40px] py-[15px] relative no-underline transition-all duration-[250ms] ease-in-out hover:bg-[#1a6b9b] hover:scale-[1.02] hover:shadow-[0_0_15px_#2d91d480,0_0_15px_#2d91d480,0_0_15px_#2d91d480,0_0_15px_#2d91d480,0_0_15px_#2d91d480,0_0_15px_#2d91d480]"
             onClick={() =>
               window.location.assign("https://pay.hotmart.com/D88880064L")
