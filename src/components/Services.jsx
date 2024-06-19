@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div className="bg-[#000b17] pt-4">
+    <div className="bg-[#000b17] pt-4" id="services">
       <h2 className="text-4xl md:text-6xl w-[50%] text-end">
         Nuestros <span className="font-bold">servicios</span>
       </h2>

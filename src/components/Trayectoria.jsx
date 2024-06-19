@@ -2,8 +2,8 @@ const Trayectoria = () => {
   return (
     <div className="bg-[#000b17]">
       <div className="bg-trayectoria bg-center bg-cover md:flex">
-        <div className="flex flex-col gap-14 md:gap-16 md:pl-16 items-center justify-center">
-          <h2 className="text-5xl md:text-6xl underline text-center font-black">
+        <div className="flex flex-col gap-14 md:gap-16 md:pl-16 items-center justify-center" id="aboutus">
+          <h2 className="text-5xl md:text-6xl underline text-center font-black" >
             TRAYECTORIA AL ÉXITO
           </h2>
           <p className="text-5xl text-center font-extrabold">EXPERIENCIA Y EDUCACIÓN FINANCIERA</p>

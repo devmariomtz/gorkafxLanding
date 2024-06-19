@@ -14,7 +14,7 @@ const NavBar = () => {
       navbar.classList.remove("bg-transparent");
       navbar.classList.remove("text-white");
     } else {
-        navbar.classList.remove("bg-black");
+      navbar.classList.remove("bg-black");
       navbar.classList.add("bg-transparent");
     }
   });
@@ -22,22 +22,33 @@ const NavBar = () => {
   return (
     <nav id="navbar" className="z-10 bg-transparent p-4 top-0 sticky">
       <div className="container mx-auto flex justify-between items-center">
-        <img src="src/assets/gorkafxlogo.png" alt="" className="w-[7%]" />
+        <img
+          src="src/assets/gorkafxlogo.png"
+          alt=""
+          className="w-[7%]"
+          onClick={() => (window.location.href = "/")}
+        />
         {/* <div className="text-white text-2xl font-bold">MyApp</div> */}
         <div className="hidden md:block w-[75%] text-center text-xl">
           <ul className="flex justify-between">
             <li className="flex items-center">
-              <a href="#" className="hover:underline underline-offset-8">
+              <a
+                href="#aboutus"
+                className="hover:underline underline-offset-8"
+              >
                 ¿QUIÉNES SOMOS?
               </a>
             </li>
             <li className="flex items-center">
-              <a href="#" className="hover:underline underline-offset-8">
+              <a
+                href="#services"
+                className="hover:underline underline-offset-8"
+              >
                 NUESTROS SERVICIOS
               </a>
             </li>
             <li className="flex items-center">
-              <a href="#" className="hover:underline underline-offset-8">
+              <a href="#planes" className="hover:underline underline-offset-8">
                 PLANES<br></br> PERSONALIZADOS
               </a>
             </li>
@@ -67,13 +78,13 @@ const NavBar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <a href="#home" className="block px-4 py-2 text-white">
+          <a href="#aboutus" className="block px-4 py-2 text-white">
             ¿QUIÉNES SOMOS?
           </a>
-          <a href="#about" className="block px-4 py-2 text-white">
+          <a href="#services" className="block px-4 py-2 text-white">
             NUESTROS SERVICIOS
           </a>
-          <a href="#services" className="block px-4 py-2 text-white">
+          <a href="#planes" className="block px-4 py-2 text-white">
             PLANES<br></br> PERSONALIZADOS
           </a>
         </div>

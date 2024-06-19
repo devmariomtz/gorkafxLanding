@@ -45,7 +45,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-3">
             <li>
               <a
-                href="#"
+                href="#aboutus"
                 className="hover:underline text-2xl font-light underline-offset-4 decoration-1"
               >
                 ¿Quiénes somos?
@@ -53,7 +53,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#services"
                 className="hover:underline text-2xl font-light underline-offset-4 decoration-1"
               >
                 Nuestro Servicios
@@ -61,7 +61,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#planes"
                 className="hover:underline text-2xl font-light underline-offset-4 decoration-1"
               >
                 Planes
@@ -74,7 +74,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-3">
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="hover:underline text-2xl font-light underline-offset-4 decoration-1"
               >
                 Contacto

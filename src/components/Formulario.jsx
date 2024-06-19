@@ -1,21 +1,21 @@
 import { Formik } from "formik";
 import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const Formulario = () => {
+  const app_form_url = import.meta.env.VITE_APP_FORM_URL;
   const form_url = import.meta.env.VITE_FORM_URL;
   const name_entry = import.meta.env.VITE_NAME_ENTRY;
   const email_entry = import.meta.env.VITE_EMAIL_ENTRY;
   const plan_entry = import.meta.env.VITE_PLAN_ENTRY;
   return (
     <div className="flex p-2 md:w-[50%] flex-col md:p-4 gap-4 h-[70%] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 ">
-      <Toaster />
       <p className="text-center text-2xl font-bold">
         FORMULARIO DE PREINSCRIPCIÓN
       </p>
       <Formik
         className=""
-        initialValues={{ name: "", email: "", message: "" }}
+        initialValues={{ name: "", email: "", plan: "" }}
         validate={(values) => {
           const errors = {};
           if (!values.email) {
@@ -45,12 +45,13 @@ const Formulario = () => {
             params.append(pair[0], pair[1]);
           }
 
+          params.append("FORM_URL", form_url);
           try {
-            await axios.post(form_url, params);
+            await axios.post(app_form_url, params);
             toast.success("Mensaje enviado! 🤩📈", { duration: 2500 });
           } catch (error) {
             console.error(error);
-            toast.error("No pudimos enviar el mensaje 😥", {
+            toast.error("No se ha podido enviar el mensaje 😥", {
               duration: 2500,
             });
           }
@@ -70,7 +71,7 @@ const Formulario = () => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit} className="h-full flex flex-col justify-center">
+          <form onSubmit={handleSubmit} className="h-full flex flex-col justify-center gap-4">
             <div className="p-2 w-full">
               <div className="relative">
                 <input
@@ -88,7 +89,7 @@ const Formulario = () => {
                 {errors.email && touched.email && errors.email}
               </span>
             </div>
-            <div className="md:flex">
+            <div className="flex flex-col md:flex-row gap-4">
               <div className="p-2 md:w-[50%]">
                 <div className="relative">
                   <input
@@ -109,9 +110,9 @@ const Formulario = () => {
               <div className="p-2 md:w-[50%]">
                 <div className="relative">
                   <select
-                    id="message"
-                    name="message"
-                    className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-3 focus:ring-gray-400 text-lg outline-none text-gray-700 py-[0.39rem] px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    id="plan"
+                    name="plan"
+                    className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-3 focus:ring-gray-400 text-lg outline-none text-gray-700 py-[0.5rem] px-3 leading-8 transition-colors duration-200 ease-in-out"
                     onChange={handleChange}
                     // onBlur={handleBlur}
                     value={values.plan}
@@ -119,9 +120,9 @@ const Formulario = () => {
                     <option value="" hidden>
                       Selecciona un plan
                     </option>
-                    <option value="plan1">Básico</option>
-                    <option value="plan2">Avanzado</option>
-                    <option value="plan3">Premium</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Avanzado">Avanzado</option>
+                    <option value="Premium">Premium</option>
                   </select>
                 </div>
                 <span className="text-red-400">
@@ -131,7 +132,7 @@ const Formulario = () => {
             </div>
             <div className="p-2 w-full flex justify-center">
               <button
-                className="flex w-full md:w-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg gap-2 items-center justify-center"
+                className="flex w-full md:w-auto text-white bg-[#2d91d4] border-0 py-2 px-8 focus:outline-none hover:bg-[#42a6e9] rounded text-lg gap-2 items-center justify-center"
                 type="submit"
                 disabled={isSubmitting}
               >
@@ -159,20 +160,7 @@ const Formulario = () => {
                     ></path>
                   </svg>
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 overflow-visible rotate-45"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                    />
-                  </svg>
+                  <></>
                 )}
               </button>
             </div>

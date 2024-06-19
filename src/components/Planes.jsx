@@ -1,11 +1,11 @@
 const Planes = () => {
   return (
-    <div className="bg-[#000b17] pt-16">
-      <h2 className="text-4xl md:text-6xl w-[75%] text-end py-4">
+    <div className="bg-[#000b17] pt-16" id="planes">
+      <h2 className="text-4xl md:text-6xl md:w-[75%] text-center md:text-end py-4">
         Planes diseñados para <span className="font-bold">traders</span>
       </h2>
-      <hr className="bg-[#2d91d4] w-[75%] h-2 border-t-0" />
-      <div className="flex flex-wrap gap-5 md:gap-10 justify-center py-10">
+      <hr className="bg-[#2d91d4] md:w-[75%] h-2 border-t-0" />
+      <div className="flex flex-wrap gap-5 md:gap-10 justify-center py-10 p-4">
         <div className="md:w-[30vw] w-full h-auto bg-gray-400  rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-col items-center">
           <h3 className="text-4xl font-bold text-center p-2">PLAN BÁSICO</h3>
           <div className="w-full p-7 flex flex-col gap-7">
