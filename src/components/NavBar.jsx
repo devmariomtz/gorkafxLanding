@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import gorkafxlogo from "/src/assets/gorkafxlogo.png";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +23,7 @@ const NavBar = () => {
     <nav id="navbar" className="z-10 bg-transparent p-4 top-0 sticky">
       <div className="container mx-auto flex justify-between items-center">
         <img
-          src="src/assets/gorkafxlogo.png"
+          src={gorkafxlogo}
           alt=""
           className="w-[7%]"
           onClick={() => (window.location.href = "/")}

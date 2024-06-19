@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-
+import gorkafxW from "/src/assets/gorkafxW.png";
 function App() {
   return (
     <React.Fragment>
@@ -16,7 +16,7 @@ function App() {
       <FloatingWhatsApp
         phoneNumber="34634444575"
         accountName="GorkaFx 📈"
-        avatar="src/assets/gorkafxW.png"
+        avatar={gorkafxW}
         statusMessage="Fondeante con éxito"
         chatMessage="Hola! 👋🏻
 En que puedo ayudarte."

@@ -1,9 +1,14 @@
+import gorkafxlogo from "../assets/gorkafxlogo.png";
+import yt from "../assets/yt.png";
+import ig from "../assets/ig.png";
+import tiktok from "../assets/tiktok.png";
+
 const Footer = () => {
   return (
     <div className="bg-gradient-to-r from-[#2e4b57] to-[#0a0e1e] shadow-[0_4px_8px_#0000001a] px-[10%] py-12 text-center">
       <div className="flex flex-col items-center justify-center md:justify-start md:items-start font-light text-2xl">
         <img
-          src="src/assets/gorkafxlogo.png"
+          src={gorkafxlogo}
           alt=""
           className="md:w-[15%] w-[35%] "
         />
@@ -102,7 +107,7 @@ const Footer = () => {
           href="https://www.youtube.com/channel/UCZLA_cKZbs-M_WW-PQNXW6Q"
           target="_blank"
         >
-          <img src="src/assets/yt.png" alt="" className="w-9" />
+          <img src={yt} alt="" className="w-9" />
         </a>
         <a
           id="instagram"
@@ -112,7 +117,7 @@ const Footer = () => {
           href="https://www.instagram.com/gorkafx/"
           target="_blank"
         >
-          <img src="src/assets/ig.png" alt="" className="w-9" />
+          <img src={ig} alt="" className="w-9" />
         </a>
         <a
           id="tiktok"
@@ -122,7 +127,7 @@ const Footer = () => {
           href="https://www.tiktok.com/@gorkafx"
           target="_blank"
         >
-          <img src="src/assets/tiktok.png" alt="" className="w-9" />
+          <img src={tiktok} alt="" className="w-9" />
         </a>
       </div>
     </div>
