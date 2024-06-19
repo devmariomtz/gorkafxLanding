@@ -6,19 +6,33 @@ import Services from "./components/Services";
 import Planes from "./components/Planes";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   return (
-    <div className="text-white bg-fixed bg-center bg-cover bg-no-repeat bg-hero">
-      <NavBar />
-      <Hero />
-      <Toaster />
-      <Form />
-      <Trayectoria />
-      <Services/>
-      <Planes />
-      <Footer />
-    </div>
+    <React.Fragment>
+
+      <FloatingWhatsApp
+        phoneNumber="34634444575"
+        accountName="GorkaFx 📈"
+        avatar="src/assets/gorkafxW.png"
+        statusMessage="Fondeante con éxito"
+        chatMessage="Hola! 👋🏻
+En que puedo ayudarte."
+        placeholder="Escribe un mensaje..."
+      />
+      <div className="text-white bg-fixed bg-center bg-cover bg-no-repeat bg-hero">
+        <NavBar />
+        <Hero />
+        <Toaster />
+        <Form />
+        <Trayectoria />
+        <Services />
+        <Planes />
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 }
 
